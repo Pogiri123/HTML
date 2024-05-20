@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #000000, #000000);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: #3a3e3e;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #72e3f2;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar-left .nav-item,
+.navbar-right .nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar-right .nav-item:hover {
+    text-decoration: underline;
+}
+
+.container {
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(107, 176, 230, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: hsl(177, 77%, 51%);
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+    font-size: 16px;
+}
+
+input#task-input {
+    flex: 2;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #56e575;
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000000;
+    transition: background 0.3s;
+}
+
+.task-list li:hover {
+    background: #f1f1f1;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.task-actions button.complete {
+    color: #28a745;
+}
+
+.task-actions button.delete {
+    color: #dc3545;
+}
+
+.task-actions button.complete:hover,
+.task-actions button.delete:hover {
+    text-decoration: underline;
+}
+
+.task-content.completed span {
+    text-decoration: line-through;
+    color: #6c757d;
+}
